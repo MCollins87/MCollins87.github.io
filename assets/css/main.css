@@ -3896,3 +3896,47 @@
 			}
 
 	}
+
+/* Project portfolio layout */
+
+.project-item{
+	margin-bottom: 3em;
+}
+
+.project-content{
+	display: flex;
+	gap: 3em;
+	align-items: flex-start;
+}
+
+.project-image{
+	flex: 0 0 35%;
+}
+
+.project-image img{
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+}
+
+.project-description{
+	flex: 1;
+}
+
+.project-description .button{
+	margin-top: 0.5em;
+}
+
+/* Stack project content on smaller screens */
+@media screen and (max-width: 736px) {
+
+    .project-content {
+        display: block;
+    }
+
+    .project-image {
+        margin-bottom: 2em;
+    }
+
+}
